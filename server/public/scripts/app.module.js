@@ -1,1 +1,1 @@
-console.log("moved to config file");
+// console.log("moved to config file");
