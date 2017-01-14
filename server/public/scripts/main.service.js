@@ -1,4 +1,4 @@
-angular.module('speechApp').service('mainService', mainService);
+angular.module('myApp').service('mainService', mainService);
 
 var ctrl = this;
 

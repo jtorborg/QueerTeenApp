@@ -19,10 +19,6 @@ Queer Teen App was built as a group project during Hack the Gap during January 1
 The landing page after logging in.
 
 
-
-### <a name="activities">Activities</a>
-Add, edit, complete and delete planting, watering, weeding, harvesting, and other activities or issues (such as pests) happening out in the field.
-
 ## <a name="setup">Set-up</a>
 
 

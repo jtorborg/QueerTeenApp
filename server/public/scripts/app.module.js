@@ -1,1 +1,1 @@
-angular.module('QueerTeenApp', ['ngRoute']);
+console.log("moved to config file");
