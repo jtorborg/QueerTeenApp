@@ -15,28 +15,19 @@ Queer Teen App was built as a group project during Hack the Gap during January 1
 
 
 
-### <a name="homepage">GrowLog Homepage</a>
+### <a name="homepage">Homepage</a>
 The landing page after logging in.
 
-![GrowLog Homepage]
 
-
-
-![GrowLog Seed Inventory](screenshots/seeds.png)
-
-![GrowLog Search Seeds](screenshots/searchSeeds.png)
 
 ### <a name="activities">Activities</a>
 Add, edit, complete and delete planting, watering, weeding, harvesting, and other activities or issues (such as pests) happening out in the field.
-
-![GrowLog Activities](screenshots/activities.png)
 
 ## <a name="setup">Set-up</a>
 
 
 __General Operating Instructions:__   
 - Run *npm install* in the terminal to download dependencies listed in package.json  
-- PostgreSQL database setup information can be found in **database.sql**  
 - Type *npm start* in the terminal to start the server connection  
 - Enter *localhost:3000* in the browser address bar  
 - Type *Control + C* in the terminal to quit the server connection
@@ -48,12 +39,15 @@ __General Operating Instructions:__
 - PostgreSQL 6.1.0
 
 # <a name="authors">Authors</a>
+- Callie Bensel
 - Kelly Clausen
 - Ian Coldwater
-- Jackie Torborg  
+- Karla Hugo
 - Keri Jackson
 - Lynette Kastel
+- Jackie Torborg  
 - Ray Weiland
+- Kathryn Yetter
 
 
 
