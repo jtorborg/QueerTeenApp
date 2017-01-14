@@ -1,4 +1,4 @@
-CREATE DATABASE hackgap
+CREATE DATABASE hackgap;
 
 CREATE TABLE volunteers (
 id SERIAL PRIMARY KEY,
@@ -7,7 +7,8 @@ lastname varchar(50),
 phonenumber integer UNIQUE,
 zipcode integer NOT NULL,
 info varchar(200),
-image_path varchar(255)
+image_path varchar(255),
+speciality varchar(100)
 );
 
 CREATE TABLE admin (
