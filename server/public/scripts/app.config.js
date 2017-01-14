@@ -1,6 +1,6 @@
 
 // routing
-angular.module('speechApp').config(function($routeProvider, $locationProvider) {
+angular.module('myApp').config(function($routeProvider, $locationProvider) {
   $locationProvider.html5Mode(true);
 
 //   $routeProvider.when('/login', {
