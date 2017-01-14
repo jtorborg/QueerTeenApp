@@ -1,1 +1,1 @@
-angular.module('QueerTeenApp', ['ngRoute']);
+angular.module('myApp', ['ngRoute']);
