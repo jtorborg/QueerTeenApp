@@ -1,9 +1,20 @@
-#dataForm {
-  width: 50%;
-  padding-bottom: 30px;
+body {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 
-#dataTableHead{
-  font-style: italic;
-  font-weight: bold;
+.container {
+    margin: 2%;
+    border: thick solid green;
+    background-color: lightgreen;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
