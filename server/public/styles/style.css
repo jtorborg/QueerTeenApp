@@ -40,5 +40,9 @@ body {
     background-clip: text;
 }
 
+.landingPageBtnContainer {
+  margin: 0 auto;
+}
+
 .btnTalk {}
 .btnResources {}
