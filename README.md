@@ -4,7 +4,7 @@ Queer Teen App is a mobile-friendly application that allows...
 
 It features...
 
-Queer Teen App was built as a group project during Hack the Gap during January 14-15, 2017. [@HacktheGap](https://http://www.hackthegap.com/).
+Queer Teen App was built as a group project during Hack the Gap during January 14-15, 2017. [HacktheGap](https://www.hackthegap.com/).
 
 
 ## Features
