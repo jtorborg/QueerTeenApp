@@ -1,3 +1,5 @@
+CREATE DATABASE hackgap
+
 CREATE TABLE volunteers (
 id SERIAL PRIMARY KEY,
 firstname varchar(50) NOT NULL,
