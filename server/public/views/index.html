@@ -1,40 +1,41 @@
 <!DOCTYPE html>
-<html ng-app="myApp">
+<html >
 
 <head>
     <meta charset="utf-8">
     <title>LGBT Teen Resources</title>
 
+    <!-- Angular & Angular Routes -->
+    <script src="./vendors/angular.min.js" charset="utf-8"></script>
+    <script src="./vendors/angular-route.min.js" charset="utf-8"></script>
 
-    <!-- <script type="text/javascript" src="./scripts/clientapp.js"></script> -->
+
+
+    <script type="text/javascript" src="./scripts/clientapp.js"></script>
 
     <!-- ??? -->
-    <script src="scripts/app.config.js" charset="utf-8"></script>
-    <script src="scripts/main.controller.js" charset="utf-8"></script>
-    <script src="scripts/main.service.js" charset="utf-8"></script>
-    <script src="scripts/app.module.js" charset="utf-8"></script>
-    <script src="vendors/angular.min.js" charset="utf-8"></script>
-    <script src="vendors/angular-route.min.js" charset="utf-8"></script>
+    <script src="./scripts/app.config.js" charset="utf-8"></script>
+    <script src="./scripts/main.controller.js" charset="utf-8"></script>
+    <script src="./scripts/main.service.js" charset="utf-8"></script>
+    <script src="./scripts/app.module.js" charset="utf-8"></script>
+
     <base href="/" />
     <link rel="stylesheet" type="text/css" href="./styles/style.css">
 
 
-    <!-- Angular & Angular Routes -->
-    <script src="vendors/angular.min.js" charset="utf-8"></script>
-    <script src="vendors/angular-route.min.js" charset="utf-8"></script>
 
     <!-- <base href="/" /> -->
 </head>
 
+<body ng-app="myApp">
 
 
 
-<body ng-view>
+
+<main ng-view>
     <div class="container"></div>
 
 
+</main>
 </body>
-
-</html>
-
 </html>

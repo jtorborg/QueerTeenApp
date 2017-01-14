@@ -1,1 +1,1 @@
-angular.module('myApp', ['ngRoute']);
+console.log("moved to config file");

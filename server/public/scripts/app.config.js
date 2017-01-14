@@ -1,6 +1,7 @@
+var myApp = angular.module('myApp', ['ngRoute']);
 
 // routing
-angular.module('myApp').config(function($routeProvider, $locationProvider) {
+myApp.config(function($routeProvider, $locationProvider) {
   $locationProvider.html5Mode(true);
 
 //   $routeProvider.when('/login', {
