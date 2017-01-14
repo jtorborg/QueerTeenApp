@@ -1,4 +1,4 @@
-angular.module('speechApp')
+angular.module('myApp')
     .controller('mainController', mainController);
 
 function mainController(mainService) {
