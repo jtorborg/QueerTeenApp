@@ -6,6 +6,7 @@
 body {
     height: 100%;
     width: 100%;
+    font-family: Verdana, Geneva, sans-serif;
 }
 
 a {
@@ -15,7 +16,7 @@ a {
 input {
     margin: 2% auto;
     width: 45%;
-    padding: 10px;
+    padding: 1%;
     display: block;
     font-size: 1.5em;
 }
@@ -85,7 +86,7 @@ input {
 .btn {
     margin: 2% auto;
     width: 50%;
-    padding: 10px;
+    padding: 1%;
     display: block;
     background-color: rgba(0, 0, 0, 0.1);
     color: white;
@@ -97,6 +98,26 @@ input {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+.btnSend {
+    padding: 1%;
+    /*display: inline-block;*/
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    align: right;
+}
+
+.btnSend:hover {}
+
+.talkInput {
+    display: inline-block;
+    margin: 2%;
+    padding: 1%;
+    font-size: 1.5em;
+    width: 50%;
+}
+
 .adminLoginLink * {
     position: absolute;
     bottom: 0;
@@ -104,4 +125,26 @@ input {
     text-align: center;
     color: lightsteelblue;
     text-decoration: underline;
+}
+
+.alertContainer {
+    margin: 2% auto;
+    margin-top: 5%;
+    width: 50%;
+    padding: 1%;
+    display: block;
+    text-align: center;
+    border: medium solid black;
+    background-color: hsla(249, 54%, 72%, 1.0);
+    font-size: 1.5em;
+}
+
+.talkInputContainer {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    margin: 0 auto;
+    width: 97.8%;
+    padding: 1%;
+    display: block;
 }
