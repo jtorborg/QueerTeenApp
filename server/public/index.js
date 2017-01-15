@@ -93,7 +93,11 @@ $(function() {
 
         // Listen for new messages sent to the channel
         generalChannel.on('messageAdded', function(message) {
-            printMessage(message.author, message.body);
+          var authorName = message.author;
+          if(authorName == 'system') {
+            authorName = 'Supportive Adult';
+          }
+            printMessage(authorName, message.body);
         });
     }
 
