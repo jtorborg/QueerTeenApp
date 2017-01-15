@@ -1,12 +1,21 @@
+@font-face {
+    font-family: MoonFlower;
+    src: url(../media/fonts/MoonFlowerBold.ttf);
+}
+
 body {
     height: 100%;
     width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
     margin: 2%;
-    border: thick solid green;
-    background-color: lightgreen;
+    border: thick solid black;
+    background-color: hsla(248, 53%, 58%, 1.0);
     position: absolute;
     top: 0;
     bottom: 0;
@@ -16,20 +25,32 @@ body {
 
 .headerContainer {
     height: 10%;
-    width: 100%;
+    width: 98%;
     white-space: nowrap;
+    padding: 1%;
+    background-color: black;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(black, hsla(248, 53%, 58%, 1.0));
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(black, hsla(248, 53%, 58%, 1.0));
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(black, hsla(248, 53%, 58%, 1.0));
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(black, hsla(248, 53%, 58%, 1.0));
+    /* Standard syntax */
+    /*text-shadow: 0.1em 0.1em 0.2em black;*/
 }
 
 .logo {
-    max-height: 100%;
+    max-height: 150%;
 }
 
 .headerText {
-    font-size: 2em;
+    font-family: MoonFlower;
+    font-size: 3.5em;
     font-weight: bold;
     display: inline-block;
-    vertical-align: text-bottom;
-    text-shadow: 2px 2px 5px #000000;
+    vertical-align: top;
 }
 
 .rainbow {
@@ -40,5 +61,34 @@ body {
     background-clip: text;
 }
 
-.btnTalk {}
-.btnResources {}
+.landingPageBtnContainer {
+  margin: 15% 0 0 0;
+}
+
+.landingPageBtnContainer * {
+
+}
+
+.btn {
+  margin: 2% auto;
+  width: 50%;
+  padding: 10px;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.adminLoginLink * {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: lightsteelblue;
+  text-decoration: underline;
+}
