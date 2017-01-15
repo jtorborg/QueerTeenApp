@@ -12,6 +12,8 @@ body {
 
 a {
     text-decoration: none;
+    /*color: hsla(328, 100%, 54%, 1.0);*/
+    color: hsla(328, 100%, 90%, 1.0);
 }
 
 input {
@@ -20,6 +22,12 @@ input {
     padding: 1%;
     display: block;
     font-size: 1.5em;
+}
+
+h4 {
+  text-decoration: underline;
+  font-size: 1.5em;
+  margin-bottom: 0;
 }
 
 .container {
@@ -31,6 +39,7 @@ input {
     bottom: 0;
     right: 0;
     left: 0;
+    overflow: scroll;
 }
 
 .headerContainer {
