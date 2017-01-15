@@ -8,10 +8,14 @@ body {
     width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
     margin: 2%;
     border: thick solid black;
-    background-color: slateblue;
+    background-color: hsla(248, 53%, 58%, 1.0);
     position: absolute;
     top: 0;
     bottom: 0;
@@ -26,13 +30,13 @@ body {
     padding: 1%;
     background-color: black;
     /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(black, slateblue);
+    background: -webkit-linear-gradient(black, hsla(248, 53%, 58%, 1.0));
     /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(black, slateblue);
+    background: -o-linear-gradient(black, hsla(248, 53%, 58%, 1.0));
     /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(black, slateblue);
+    background: -moz-linear-gradient(black, hsla(248, 53%, 58%, 1.0));
     /* For Firefox 3.6 to 15 */
-    background: linear-gradient(black, slateblue);
+    background: linear-gradient(black, hsla(248, 53%, 58%, 1.0));
     /* Standard syntax */
     /*text-shadow: 0.1em 0.1em 0.2em black;*/
 }
@@ -43,7 +47,7 @@ body {
 
 .headerText {
     font-family: MoonFlower;
-    font-size: 3em;
+    font-size: 3.5em;
     font-weight: bold;
     display: inline-block;
     vertical-align: top;
@@ -62,15 +66,29 @@ body {
 }
 
 .landingPageBtnContainer * {
-    margin: 2% auto;
-    width: 50%;
-    padding: 10px;
+
 }
 
 .btn {
+  margin: 2% auto;
+  width: 50%;
+  padding: 10px;
   display: block;
   background-color: rgba(0, 0, 0, 0.1);
   color: white;
   font-size: 1.5em;
   cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.adminLoginLink * {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: lightsteelblue;
+  text-decoration: underline;
 }
