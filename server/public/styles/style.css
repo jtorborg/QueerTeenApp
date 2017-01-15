@@ -148,3 +148,22 @@ input {
     padding: 1%;
     display: block;
 }
+
+.loaderGif {
+    max-height: 100%;
+}
+
+.loaderGifContainer {
+    padding: 0;
+    margin: 0;
+    height: 18px;
+    width: 100%;
+}
+
+.iframeContainer {
+  margin: auto;
+}
+
+.iframe {
+    display: block;
+}

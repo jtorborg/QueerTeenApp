@@ -16,6 +16,9 @@ myApp.config(['$routeProvider', function($routeProvider) {
       }).when('/talk', {
           templateUrl: 'views/partials/talk.html',
           controller: ''
+        }).when('/talkConnected', {
+            templateUrl: 'views/partials/talkConnected.html',
+            controller: ''
     }).otherwise({
         redirectTo: '/welcome'
     });
