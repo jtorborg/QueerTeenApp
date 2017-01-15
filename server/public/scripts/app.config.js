@@ -19,7 +19,11 @@ myApp.config(['$routeProvider', function($routeProvider) {
         }).when('/talkConnected', {
             templateUrl: 'views/partials/talkConnected.html',
             controller: ''
-    }).otherwise({
+    }).when('/resourcesList', {
+        templateUrl: 'views/partials/resourcesList.html',
+        controller: ''
+    }).
+    otherwise({
         redirectTo: '/welcome'
     });
 }]); // end .config
