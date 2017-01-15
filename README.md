@@ -1,6 +1,6 @@
 
 # <a name="top">Queer Teen App</a>
-Queer Teen App is a mobile-friendly application that allows...
+Queer Teen App is a mobile-friendly application that allows LGBTQIA Teens to access resources and supportive adult volunteers in their local area. 
 
 It features...
 
