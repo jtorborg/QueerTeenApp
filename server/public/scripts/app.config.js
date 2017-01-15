@@ -13,12 +13,12 @@ myApp.config(['$routeProvider', function($routeProvider) {
     }).when('/adminLogin', {
         templateUrl: 'views/partials/adminLogin.html',
         controller: ''
-      }).when('/talk', {
-          templateUrl: 'views/partials/talk.html',
-          controller: ''
-        }).when('/talkConnected', {
-            templateUrl: 'views/partials/talkConnected.html',
-            controller: ''
+    }).when('/talk', {
+        templateUrl: 'views/partials/talk.html',
+        controller: 'mainController'
+    // }).when('/talkConnected', {
+    //     templateUrl: 'views/partials/talkConnected.html',
+    //     controller: ''
     }).when('/resourcesList', {
         templateUrl: 'views/partials/resourcesList.html',
         controller: ''

@@ -7,6 +7,14 @@ function mainController(mainService) {
     main.Object = {};
     main.Array = [];
 
+    window.onhashchange = function(e) {
+      if (e.newURL.indexOf('/talk') > 0) {
+        setTimeout(function() {
+          window.location.href = '/index.html';
+        }, 1000);
+      }
+    }
+
 
 
 
