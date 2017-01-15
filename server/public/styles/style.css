@@ -161,9 +161,29 @@ input {
 }
 
 .iframeContainer {
-  margin: auto;
+    margin: auto;
 }
 
 .iframe {
     display: block;
+}
+
+.mapContainer {
+  margin: 2%;
+}
+
+.mapImg {
+  float: left;
+}
+
+.resourcesTitle {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.resourcesList {
+  float: right;
+  text-align: left;
+  width: 45%;
+  color: white;
 }
