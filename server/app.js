@@ -54,13 +54,23 @@ app.use('/testRoute', testRoute);
 app.post('/chat', function (req, res) {
   res.send('ok');
 
-  client.sendMessage({
-      messagingServiceSid: 'MGf4cba72add262c61b0fb27539f8cc1db',
-      to: '+19524841727',
-      body: req.body.Body
-  }, function(err, message) {
-      console.log(err);
+  ['+19524841727', '+16125990365', '+16124371730', '+16518943684'].forEach(function(num) {
+    client.sendMessage({
+        messagingServiceSid: 'MGf4cba72add262c61b0fb27539f8cc1db',
+        to: num,
+        body: req.body.Body
+    }, function(err, message) {
+        console.log(err);
+    });
   });
+
+  // client.sendMessage({
+  //     messagingServiceSid: 'MGf4cba72add262c61b0fb27539f8cc1db',
+  //     to: '+16125990365',
+  //     body: req.body.Body
+  // }, function(err, message) {
+  //     console.log(err);
+  // });
 });
 
 
