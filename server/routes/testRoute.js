@@ -1,16 +1,41 @@
-//TODO: check connectionString and change /omicron to your db you made the testbase DB in postgres
-
 var express = require('express');
 var router = express.Router();
 var pg = require('pg');
-var connectionString = 'postgres://localhost:5432/hackgap';
 
+var config = {
+    database: 'hackgap'
+};
+
+// initialize the database connection pool
+var pool = new pg.Pool(config);
 
 //modules
 var testModule = require('../modules/testModule.js');
 console.log(testModule.test("\n\n\n\ntestRoute.js: testing module connection"));
 
+router.get('/', function(req, res) {
 
+    pool.connect(function(err, client, done) {
+
+        if (err) {
+            console.log('Error connecting the DB', err);
+            res.sendStatus(500);
+            done();
+            return;
+
+        } //end of if statement
+        client.query('SELECT * FROM volunteers;', function(err, result) {
+            done();
+            if (err) {
+                console.log('err', err);
+                res.sendStatus(500);
+                return;
+            } //end of if
+
+            res.send(result.rows); //!!!@@@send back to AJAX success
+        }); //end of client query
+    }); //end
+  }); //end of router get
 // //AJAX requests:
 // router.delete('/:id', function(req, res) {
 //     var id = req.params.id;
@@ -116,7 +141,7 @@ console.log(testModule.test("\n\n\n\ntestRoute.js: testing module connection"));
 //             });
 //
 //     });
-// 
+//
 // });
 
 

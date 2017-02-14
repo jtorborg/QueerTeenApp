@@ -6,7 +6,7 @@ function mainController(mainService) {
     var main = this;
     main.Object = {};
     main.Array = [];
-
+console.log("window", window);
     window.onhashchange = function(e) {
       if (e.newURL.indexOf('/talk') > 0) {
         setTimeout(function() {
@@ -29,6 +29,17 @@ function mainController(mainService) {
             //     console.log("main array", main.Array);
             // });
 
+        }
+
+        main.getVolunteers = function() {
+
+              console.log('inside getVolunteers');
+              mainService.getVolunteers().then(function(response) {
+                  console.log("response from main array", response);
+                  main.Array = response.data;
+                  console.log("main array", main.Array);
+
+              });
         }
 
 

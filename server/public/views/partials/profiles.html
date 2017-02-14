@@ -1,0 +1,19 @@
+<h1>Volunteer Profiles</h1>
+
+<div id="volunteerprofiles" data-ng-init="main.getVolunteers()">
+
+</div>
+
+<ul>
+
+<li ng-repeat="volunteervariable in main.Array track by $index">
+Name: {{volunteervariable.firstname}}   {{volunteervariable.lastname}}
+Zip Code: {{volunteervariable.zipcode}} Speciality: {{volunteervariable.speciality}}
+
+Image: {{volunteervariable.image_path}}
+
+<a class="one_star" href="javascript: submitRating(1, 5)">
+
+</li>
+
+</ul>

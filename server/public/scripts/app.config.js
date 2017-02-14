@@ -16,14 +16,16 @@ myApp.config(['$routeProvider', function($routeProvider) {
     }).when('/talk', {
         templateUrl: 'views/partials/talk.html',
         controller: 'mainController'
-    // }).when('/talkConnected', {
-    //     templateUrl: 'views/partials/talkConnected.html',
-    //     controller: ''
+        // }).when('/talkConnected', {
+        //     templateUrl: 'views/partials/talkConnected.html',
+        //     controller: ''
     }).when('/resourcesList', {
         templateUrl: 'views/partials/resourcesList.html',
-        controller: ''
-    }).
-    otherwise({
+        controller: 'mainController'
+    }).when('/profiles', {
+        templateUrl: 'views/partials/profiles.html',
+        controller: 'mainController as main'
+    }).otherwise({
         redirectTo: '/welcome'
     });
 }]); // end .config
